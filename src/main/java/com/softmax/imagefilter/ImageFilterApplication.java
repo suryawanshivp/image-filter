@@ -18,4 +18,9 @@ SpringApplication.run(ImageFilterApplication.class, args);
 public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 return String.format("Hello %s!", name);
 }
+
+@GetMapping("/vishal")
+public String vishal(@RequestParam(value = "name", defaultValue = "Vishal") String name) {
+return String.format("Hello %s!", name);
+}
 }
